@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+void printBoard(int x[3][3]);
+
+int main(){
+  int boards[3][3] = {{1,0,1},{0,2,1},{2,2,1}};
+  int xwins = 0;
+  int ywins = 0;
+
+  printBoard(boards);
+  
+  /*
+  while(true){
+    booolean whosturn = true; // if it's true, its X's turn
+    
+    }*/
+  
+  
+}
+
+void printBoard(int x[3][3] ){
+  char rows[3] = {'A','B','C'};
+ 
+  cout << "  1  2  3" << endl;
+  for(int i = 0;i<3;i++){
+    cout << rows[i];
+    for(int j = 0;j<3;j++){
+      if(x[i][j] == 1){
+	cout << " X ";
+      } else if (x[i][j] == 2){
+	cout << " O ";
+      } else {
+	cout << "   ";
+      }
+    }
+    cout << endl;
+  }
+}
