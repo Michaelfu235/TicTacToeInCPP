@@ -1,3 +1,7 @@
+//Author: Michael Fu
+//Date: 10/4/2023
+//Description: This is a 2 player tictactoe game using the console in cpp
+
 #include <iostream>
 #include <cstring>
 
